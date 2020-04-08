@@ -1,0 +1,95 @@
+Sub agregaracarrito()
+  'Opens the specified URL in a running instance of the specified browser.
+  Call Browsers.Item(btChrome).Navigate("https://www.advantageonlineshopping.com/#/product/16?color=414141&quantity=1&pageState=edit")
+  'Clicks the 'textnode' object.
+  Call Aliases.browser.pageVentajaDeCompras.section.textnode.Click(78, 9)
+  'Clicks the 'textnode2' object.
+  Call Aliases.browser.pageVentajaDeCompras.section.textnode2.Click(95, 7)
+  'Clicks the 'panelTabletsimg' object.
+  Call Aliases.browser.pageVentajaDeCompras.panelTabletsimg.Click(248, 158)
+  'Drags the 'pageVentajaDeCompras' object.
+  Call Aliases.browser.pageVentajaDeCompras.Drag(1532, 368, 3, 262)
+  'Clicks the 'imageFetchimageImageId3100' object.
+  Call Aliases.browser.pageVentajaDeCompras.section.imageFetchimageImageId3100.Click(161, 82)
+  'Clicks the 'buttonAAdirAlCarrito' button.
+  Call Aliases.browser.pageVentajaDeCompras.section.buttonAAdirAlCarrito.ClickButton
+  'Clicks the 'buttonPago000' button.
+  Call Aliases.browser.pageVentajaDeCompras.header.buttonPago000.ClickButton
+  'Clicks the 'textnode3' object.
+  Call Aliases.browser.pageVentajaDeCompras.section.textnode3.Click(48, 7)
+  'Drags the 'pageVentajaDeCompras' object.
+  Call Aliases.browser.pageVentajaDeCompras.Drag(1535, 250, -5, 142)
+  'Clicks the 'textnode4' object.
+  Call Aliases.browser.pageVentajaDeCompras.section.textnode4.Click(30, 15)
+End Sub
+
+Sub registrousuario()
+  'Opens the specified URL in a running instance of the specified browser.
+  Call Browsers.Item(btChrome).Navigate("https://www.advantageonlineshopping.com/#/")
+  'Clicks the 'vgMenuuser' object.
+  Call Aliases.browser.pageVentajaDeCompras.vgMenuuser.Click(11, 11)
+  'Clicks the 'textnode' object.
+  Call Aliases.browser.pageVentajaDeCompras.link.textnode.Click(68, 7)
+  'Clicks the 'textnode' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.textnode.Click(113, 17)
+  'Sets the text 'ronaldleon' in the 'textboxUsernameregisterpage' text editor.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxUsernameregisterpage.SetText("ronaldleon")
+  'Enters '[Tab]' in the 'textboxUsernameregisterpage' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxUsernameregisterpage.Keys("[Tab]")
+  'Sets the text 'ronaldprogramando18' in the 'textboxEmailregisterpage' text editor.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxEmailregisterpage.SetText("ronaldprogramando18")
+  'Enters '~^q' in the 'textboxEmailregisterpage' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxEmailregisterpage.Keys("~^q")
+  'Sets the text 'ronaldprogramando18@gmail.com' in the 'textboxEmailregisterpage' text editor.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxEmailregisterpage.SetText("ronaldprogramando18@gmail.com")
+  'Enters '[Tab]' in the 'textboxEmailregisterpage' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxEmailregisterpage.Keys("[Tab]")
+  'Sets the text 'Dogponponio9' in the 'passwordboxPasswordregisterpage' text editor.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.passwordboxPasswordregisterpage.SetText("Dogponponio9")
+  'Enters '[Tab]' in the 'passwordboxPasswordregisterpage' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.passwordboxPasswordregisterpage.Keys("[Tab]")
+  'Sets the text 'Dogponponio9' in the 'passwordboxConfirmPasswordregist' text editor.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.passwordboxConfirmPasswordregist.SetText("Dogponponio9")
+  'Enters '[Tab]' in the 'passwordboxConfirmPasswordregist' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.passwordboxConfirmPasswordregist.Keys("[Tab]")
+  'Sets the text 'ronald12' in the 'textboxFirstNameregisterpage' text editor.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxFirstNameregisterpage.SetText("ronald12")
+  'Enters '[Tab]' in the 'textboxFirstNameregisterpage' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxFirstNameregisterpage.Keys("[Tab]")
+  'Sets the text 'leon' in the 'textboxLastNameregisterpage' text editor.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxLastNameregisterpage.SetText("leon")
+  'Enters '[Tab]' in the 'textboxLastNameregisterpage' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxLastNameregisterpage.Keys("[Tab]")
+  'Sets the text '3206083527' in the 'textboxPhoneNumberregisterpage' text editor.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxPhoneNumberregisterpage.SetText("3206083527")
+  'Enters '[Tab]' in the 'textboxPhoneNumberregisterpage' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxPhoneNumberregisterpage.Keys("[Tab]")
+  'Selects the 'Azerbaijan' item of the 'selectCountrylistboxregisterpage' combo box.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.selectCountrylistboxregisterpage.ClickItem("Azerbaijan")
+  'Drags the 'pageVentajaDeCompras' object.
+  Call Aliases.browser.pageVentajaDeCompras.Drag(1528, 313, 9, 170)
+  'Clicks the 'textboxCityregisterpage' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxCityregisterpage.Click(97, 14)
+  'Sets the text 'ffffffff' in the 'textboxCityregisterpage' text editor.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxCityregisterpage.SetText("ffffffff")
+  'Enters '[Tab]' in the 'textboxCityregisterpage' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxCityregisterpage.Keys("[Tab]")
+  'Sets the text 'dddddddd' in the 'textboxAddressregisterpage' text editor.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxAddressregisterpage.SetText("dddddddd")
+  'Enters '[Tab]' in the 'textboxAddressregisterpage' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxAddressregisterpage.Keys("[Tab]")
+  'Sets the text 'jjjj' in the 'textboxStateProvinceRegionregist' text editor.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxStateProvinceRegionregist.SetText("jjjj")
+  'Enters '[Tab]' in the 'textboxStateProvinceRegionregist' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxStateProvinceRegionregist.Keys("[Tab]")
+  'Sets the text '1100001' in the 'textboxPostalCoderegisterpage' text editor.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxPostalCoderegisterpage.SetText("1100001")
+  'Enters '[Tab]' in the 'textboxPostalCoderegisterpage' object.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.textboxPostalCoderegisterpage.Keys("[Tab]")
+  'Drags the 'pageVentajaDeCompras' object.
+  Call Aliases.browser.pageVentajaDeCompras.Drag(1532, 448, 4, 70)
+  'Sets the state of the 'checkboxIAgree' checkbox to True.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.checkboxIAgree.ClickChecked(True)
+  'Clicks the 'buttonRegistrarse' button.
+  Call Aliases.browser.pageVentajaDeCompras.sectionRegisterpage.article.buttonRegistrarse.ClickButton
+End Sub
