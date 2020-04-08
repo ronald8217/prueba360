@@ -1,0 +1,67 @@
+ package prueba;
+
+import java.text.DateFormat;
+import static java.time.Clock.system;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
+import static java.util.concurrent.ThreadLocalRandom.current;
+import javax.xml.xpath.XPathExpression;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
+import javax.xml.xpath.XPath;
+import javax.xml.xpath.XPathConstants;
+import javax.xml.xpath.XPathExpressionException;
+import javax.xml.xpath.XPathFactory;
+import javax.xml.xpath.XPathVariableResolver;
+
+
+
+public class prueba {
+
+
+    public static void main(String[] args) throws XPathExpressionException {
+    
+    	WebDriver driver = null ;
+        
+    	System.setProperty("webdriver.gecko.driver","C:/Users/rleon/Desktop/geckodriver.exe");
+    	
+        
+        driver = new FirefoxDriver();
+        String baseUr2 = "https://www.advantageonlineshopping.com/#/";        
+        driver.get(baseUr2);
+      //añadir carro de compras
+        driver.findElement(By.Id("tabletsImg")).click();
+        String baseUrl3 =https://www.advantageonlineshopping.com/#/category/Tablets/3
+        	driver.get(baseUrl3);
+        driver.findElement(By.name("save_to_cart")).click();
+        driver.findElement(By.Id("checkOutPopUp")).click();
+        
+        //registro
+        
+        String baseUrl = "https://www.advantageonlineshopping.com/#/register";
+        driver.get(baseUrl);
+        
+        driver.findElement(By.name("usernameRegisterPage")).sendKeys("root");
+        driver.findElement(By.name("emailRegisterPage")).sendKeys("root");
+        driver.findElement(By.name("passwordRegisterPage")).sendKeys("Golden8217");
+        driver.findElement(By.name("confirm_passwordRegisterPage")).sendKeys("Golden8217");           
+        driver.findElement(By.name("first_nameRegisterPage")).sendKeys("root");        
+        driver.findElement(By.name("last_nameRegisterPage")).sendKeys("root");        
+        driver.findElement(By.name("phone_numberRegisterPage")).sendKeys("3206083527");        
+        Select Ciudad = new Select(driver.findElement(By.name("userCity")));
+        Ciudad.selectByVisibleText("Colombia");    
+        driver.findElement(By.name("cityRegisterPage")).sendKeys("root");        
+        driver.findElement(By.name("addressRegisterPage")).sendKeys("root");
+        driver.findElement(By.name("state_/_province_/_regionRegisterPage")). sendKeys("root");   
+         driver.findElement(By.name("postal_codeRegisterPage")).sendKeys("110111");                                        
+       driver.findElement(By.name("i_agree")).click();                                    
+      // clic de nuevo en link de registro
+      driver.findElement(By.linkText("register_btnundefined")).click();
+      
+        }
+        driver.quit();
+        System.exit(0);
+    }
